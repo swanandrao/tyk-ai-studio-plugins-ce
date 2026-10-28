@@ -27,7 +27,7 @@ It is not output moderation or tool-execution authorization.
 Install the digest-pinned OCI artifact from AI Studio's Marketplace:
 
 ```text
-oci://ghcr.io/nextmoca/tyk-ai-studio-runtime-defense-plugin@sha256:7e73616fcc6d33e3ad3d764fffcbff9f9d1490fbded3314abfea5ea16db2f032
+oci://ghcr.io/nextmoca/tyk-ai-studio-runtime-defense-plugin@sha256:f57bf6f2c80b02e78bce8e75663d5630a0daf66a8ba3e57352cbb223b07f7f61
 ```
 
 Then:
