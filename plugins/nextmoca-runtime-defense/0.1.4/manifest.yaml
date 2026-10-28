@@ -1,32 +1,38 @@
 # Identity & Versioning
 id: "com.nextmoca.runtime-context-defense"
 name: "Next Moca Runtime Defense for AI Agents"
-version: "0.1.2"
-description: "Governs eligible request context before it reaches an LLM, applying hosted Next Moca selection and security delivery decisions at Tyk AI Studio's post_auth hook."
+version: "0.1.4"
+description: "Governs request context before it reaches an LLM by applying hosted Next Moca selection and security delivery decisions at Tyk's post_auth hook."
 
 # OCI Distribution
 oci:
   registry: "ghcr.io"
   repository: "nextmoca/tyk-ai-studio-runtime-defense-plugin"
-  tag: "0.1.2"
-  digest: "sha256:f57bf6f2c80b02e78bce8e75663d5630a0daf66a8ba3e57352cbb223b07f7f61"
-  platform: ["linux/amd64", "linux/arm64"]
+  tag: "0.1.4"
+  digest: "sha256:dc86bf049a8a201d47299caf97219469ed8ecdb8e0ed9f2f48287dcb14219c31"
+  platform:
+    - "linux/amd64"
+    - "linux/arm64"
 
 # Discovery & Classification
 category: "security"
-keywords: ["ai-security", "agent-security", "context-governance", "prompt-injection", "llm"]
+keywords:
+  - "ai-security"
+  - "agent-security"
+  - "context-governance"
+  - "prompt-injection"
+  - "llm"
 maturity: "beta"
 
 # Documentation & Support
 links:
-  documentation: "https://github.com/nextmoca/tyk-ai-studio-runtime-defense#readme"
+  documentation: "https://docs.nextmoca.com"
   repository: "https://github.com/nextmoca/tyk-ai-studio-runtime-defense"
   support: "https://github.com/nextmoca/tyk-ai-studio-runtime-defense/issues"
-  issues: "https://github.com/nextmoca/tyk-ai-studio-runtime-defense/issues"
   homepage: "https://www.nextmoca.com"
 
 # Display Assets
-icon: "https://raw.githubusercontent.com/TykTechnologies/tyk-ai-studio-plugins-ce/main/plugins/nextmoca-runtime-defense/0.1.2/icon.png"
+icon: "https://raw.githubusercontent.com/TykTechnologies/tyk-ai-studio-plugins-ce/main/plugins/nextmoca-runtime-defense/0.1.4/icon.png"
 screenshots: []
 
 # Maintainers
@@ -34,19 +40,20 @@ maintainers:
   - name: "Swanand Rao"
     email: "swanand@nextmoca.com"
     organization: "Next Moca"
-
 publisher: "tyk-community"
 license: "Apache-2.0"
 
 # Capabilities
 capabilities:
-  hooks: ["post_auth"]
+  hooks:
+    - "post_auth"
   primary_hook: "post_auth"
 
 # Requirements & Compatibility
 requirements:
   min_studio_version: "2.2.0"
-  api_versions: ["gateway-v1"]
+  api_versions:
+    - "gateway-v1"
   dependencies: []
 
 # Security & Permissions
@@ -57,14 +64,14 @@ permissions:
   ui: []
 
 # Configuration Schema
-config_schema_url: "https://raw.githubusercontent.com/nextmoca/tyk-ai-studio-runtime-defense/main/config.schema.json"
+config_schema_url: "https://raw.githubusercontent.com/nextmoca/tyk-ai-studio-runtime-defense/v0.1.4/config.schema.json"
 
 # Enterprise
 enterprise_only: false
 
 # Metadata
-created_at: "2026-10-27T22:47:21Z"
-updated_at: "2026-10-28T05:36:00Z"
+created_at: "2026-10-28T14:48:00Z"
+updated_at: "2026-10-28T14:48:00Z"
 deprecated: false
 deprecated_message: ""
 replacement: ""
